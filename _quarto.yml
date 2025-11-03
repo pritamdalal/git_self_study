@@ -1,0 +1,22 @@
+project:
+  type: book
+  output-dir: _site
+
+book:
+  title: "Git Self-Study"
+  author: "Pritam Dalal"
+  date: today
+  chapters:
+    - index.qmd
+    - chapters/01_intro.qmd
+    - chapters/02_reading_list.qmd
+
+format:
+  html:
+    theme: cosmo
+    toc: true
+    number-sections: true
+
+# If your .qmd executes Python/R:
+execute:
+  freeze: auto     # cache outputs; don’t re-run unless inputs change
